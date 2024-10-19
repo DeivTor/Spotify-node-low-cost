@@ -1,0 +1,121 @@
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.material-symbols-outlined {
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 100,
+    'GRAD' 0,
+    'opsz' 10
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body,
+#hero,
+#marcas,
+li,
+#card-caracteristic,
+.card-title,
+.button-about {
+    font-family: 'Poppins', sans-serif;
+}
+
+.navbar{
+    background-color: transparent;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1030;
+}
+
+li {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+
+.nav-link {
+    position: relative;
+    padding-bottom: 5px;
+    transition: all 0.3s ease-in-out;
+}
+
+.nav-link::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #1db954;
+    transition: width 0.3s ease-in-out;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+
+#hero {
+    height: 100vh;
+}
+
+
+#hero-title, #title-repro {
+    font-family: 'Poppins', sans-serif;
+    font-size: 80px;
+    font-weight: 700;
+}
+
+.hightlight{
+    color: aliceblue;
+}
+
+.right-side,
+.left-side {
+    height: 100vh;
+}
+
+/*Columna izquierda del hero*/
+.left-side-main {
+    background: linear-gradient(to right, #191414 80%, #1db954 20%);
+}
+
+/*Columna derecha del hero*/
+.right-side {
+    background-color: #1db954;
+}
+
+/*SEGUNDA PAGINA*/
+#reproductor-body{
+    background-image: url('/public/img/wallpaper.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#title-repro{
+    color: aliceblue;
+}
+
+#card-song .card{
+    backdrop-filter: blur(25px) saturate(200%);
+    -webkit-backdrop-filter: blur(25px) saturate(200%);
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+    color: aliceblue;
+}
+
+#card-song .card:hover{
+    cursor: pointer;
+}
+
+.links{
+    text-decoration: none;
+}

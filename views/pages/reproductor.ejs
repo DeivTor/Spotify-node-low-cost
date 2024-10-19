@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <%- include('../includes/head') %>
+        <title>Reproductor</title>
+</head>
+
+<body id="reproductor-body">
+    <%- include('../includes/header') %>
+
+        <div class="container my-5">
+            <div class="row text-center">
+                <h1 id="title-repro" class="py-5">Tu PlayList</h1>
+            </div>
+        </div>
+        <!--Content-->
+        <section class="container my-5">
+            <div id="card-song" class="row justify-content-center mt-5">
+                <!--Song 1-->
+                <div class="col col-12 my-2">
+                    <div class="card" data-bs-toggle="modal" data-bs-target="#modal1">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-1 col-sm-1 col-md-1 col-lg-1 text-center">
+                                    1
+                                </div>
+                                <div class="col-9 col-sm-9 col-md-10 col-lg-10 text-start">
+                                    Intro
+                                </div>
+                                <div class="col-2 col-sm-2 col-md-1 col-lg-1 text-center">
+                                    3:49
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Modal for Song 1 -->
+                <div class="modal fade" id="modal1">
+                    <div class="modal-dialog">
+                        <div class="modal-content bg-dark text-white">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="modalIntroLabel">Intro</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="ratio ratio-16x9">
+                                    <iframe style="border-radius:12px"
+                                        src="https://open.spotify.com/embed/track/7knQRoWp7aaZFQ8kpdRt4K?utm_source=generator&theme=0"
+                                        width="100%" height="152" frameBorder="0" allowfullscreen=""
+                                        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                                        loading="lazy"></iframe>
+                                </div>
+                                <div class="row row-cols-4 justify-content-center">
+                                    <div class="col text-center">
+                                        <a href="https://open.spotify.com/track/7knQRoWp7aaZFQ8kpdRt4K?si=fed65f7c04d74bc2"
+                                            target="_blank">
+                                            <img src="/public/img/spotify.png" alt="Intro"
+                                                style="height: 40px; width: 40px">
+                                        </a>
+                                    </div>
+                                    <div class="col text-center">
+                                        <a href="https://deezer.page.link/zX3XSR5BFHiPVTJQ9" target="_blank">
+                                            <img src="/public/img/deezer.png" alt="Intro"
+                                                style="height: 40px; width: 40px">
+                                        </a>
+                                    </div>
+                                    <div class="col text-center">
+                                        <a href="https://www.youtube.com/watch?v=xWuE4Liqt4s&ab_channel=Trappist-Topic"
+                                            target="_blank">
+                                            <img src="/public/img/youtube.png" alt="Intro"
+                                                style="height: 40px; width: 40px">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-footer justify-content-center">
+                                <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!--Song 2-->
+                <div class="col col-12 mb-2">
+                    <div class="card" data-bs-toggle="modal" data-bs-target="#modal2">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-1 col-sm-1 col-md-1 col-lg-1 text-center">
+                                    2
+                                </div>
+                                <div class="col-9 col-sm-9 col-md-10 col-lg-10 text-start">
+                                    El juego
+                                </div>
+                                <div class="col-2 col-sm-2 col-md-1 col-lg-1 text-center">
+                                    4:01
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Modal for Song 2 -->
+                <div class="modal fade" id="modal2">
+                    <div class="modal-dialog">
+                        <div class="modal-content bg-dark text-white">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="modalIntroLabel">El juego</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="ratio ratio-16x9">
+                                    <iframe style="border-radius:12px"
+                                        src="https://open.spotify.com/embed/track/0y7xGjTFdO70Lzi9Ifdr2o?utm_source=generator&theme=0"
+                                        width="100%" height="152" frameBorder="0" allowfullscreen=""
+                                        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                                        loading="lazy"></iframe>
+                                </div>
+                                <div class="row row-cols-4 justify-content-center">
+                                    <div class="col text-center">
+                                        <a href="https://open.spotify.com/track/0y7xGjTFdO70Lzi9Ifdr2o?si=4a7aa7b921c84fa7"
+                                            target="_blank">
+                                            <img src="/public/img/spotify.png" alt="Intro"
+                                                style="height: 40px; width: 40px">
+                                        </a>
+                                    </div>
+                                    <div class="col text-center">
+                                        <a href="https://deezer.page.link/j4tEwZHYCi4akzDm9" target="_blank">
+                                            <img src="/public/img/deezer.png" alt="Intro"
+                                                style="height: 40px; width: 40px">
+                                        </a>
+                                    </div>
+                                    <div class="col text-center">
+                                        <a href="https://www.youtube.com/watch?v=QSIkLKkWBx4&ab_channel=Trappist-Topic"
+                                            target="_blank">
+                                            <img src="/public/img/youtube.png" alt="Intro"
+                                                style="height: 40px; width: 40px">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-footer justify-content-center">
+                                <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!--Song 3-->
+                <div class="col col-12 mb-2">
+                    <div class="card" data-bs-toggle="modal" data-bs-target="#modal3">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-1 col-sm-1 col-md-1 col-lg-1 text-center">
+                                    3
+                                </div>
+                                <div class="col-9 col-sm-9 col-md-10 col-lg-10 text-start">
+                                    Regresivo
+                                </div>
+                                <div class="col-2 col-sm-2 col-md-1 col-lg-1 text-center">
+                                    4:14
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Modal for Song 3 -->
+                <div class="modal fade" id="modal3">
+                    <div class="modal-dialog">
+                        <div class="modal-content bg-dark text-white">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="modalIntroLabel">Regresivo</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="ratio ratio-16x9">
+                                    <iframe style="border-radius:12px"
+                                        src="https://open.spotify.com/embed/track/71xxQUXhIBgeXwtE1lahKw?utm_source=generator&theme=0"
+                                        width="100%" height="152" frameBorder="0" allowfullscreen=""
+                                        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                                        loading="lazy"></iframe>
+                                </div>
+                                <div class="row row-cols-4 justify-content-center">
+                                    <div class="col text-center">
+                                        <a href="https://open.spotify.com/track/71xxQUXhIBgeXwtE1lahKw?si=b38f596eb1704c59"
+                                            target="_blank">
+                                            <img src="/public/img/spotify.png" alt="Intro"
+                                                style="height: 40px; width: 40px">
+                                        </a>
+                                    </div>
+                                    <div class="col text-center">
+                                        <a href="https://deezer.page.link/nxMsBQwULmHBQTBb8" target="_blank">
+                                            <img src="/public/img/deezer.png" alt="Intro"
+                                                style="height: 40px; width: 40px">
+                                        </a>
+                                    </div>
+                                    <div class="col text-center">
+                                        <a href="https://www.youtube.com/watch?v=NFnqHrIuGho&ab_channel=Trappist-Topic"
+                                            target="_blank">
+                                            <img src="/public/img/youtube.png" alt="Intro"
+                                                style="height: 40px; width: 40px">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-footer justify-content-center">
+                                <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!--Song 4-->
+                <div class="col col-12 mb-2">
+                    <div class="card" data-bs-toggle="modal" data-bs-target="#modal4">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-1 col-sm-1 col-md-1 col-lg-1 text-center">
+                                    4
+                                </div>
+                                <div class="col-9 col-sm-9 col-md-10 col-lg-10 text-start">
+                                    Carta de un ángel
+                                </div>
+                                <div class="col-2 col-sm-2 col-md-1 col-lg-1 text-center">
+                                    4:53
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Modal for Song 4 -->
+                <div class="modal fade" id="modal4">
+                    <div class="modal-dialog">
+                        <div class="modal-content bg-dark text-white">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="modalIntroLabel">Carta de un ángel</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="ratio ratio-16x9">
+                                    <iframe style="border-radius:12px"
+                                        src="https://open.spotify.com/embed/track/1ZEALQLaap5eC8iunL9GZi?utm_source=generator&theme=0"
+                                        width="100%" height="152" frameBorder="0" allowfullscreen=""
+                                        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                                        loading="lazy"></iframe>
+                                </div>
+                                <div class="row row-cols-4 justify-content-center">
+                                    <div class="col text-center">
+                                        <a href="https://open.spotify.com/track/1ZEALQLaap5eC8iunL9GZi?si=6e03c158a43346a9"
+                                            target="_blank">
+                                            <img src="/public/img/spotify.png" alt="Intro"
+                                                style="height: 40px; width: 40px">
+                                        </a>
+                                    </div>
+                                    <div class="col text-center">
+                                        <a href="https://deezer.page.link/rEDgieCUyNRpxLRG9" target="_blank">
+                                            <img src="/public/img/deezer.png" alt="Intro"
+                                                style="height: 40px; width: 40px">
+                                        </a>
+                                    </div>
+                                    <div class="col text-center">
+                                        <a href="https://www.youtube.com/watch?v=Xyx9Y0ix4-Q&ab_channel=Trappist-Topic"
+                                            target="_blank">
+                                            <img src="/public/img/youtube.png" alt="Intro"
+                                                style="height: 40px; width: 40px">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-footer justify-content-center">
+                                <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!--Song 5-->
+                <div class="col col-12 mb-2">
+                    <div class="card" data-bs-toggle="modal" data-bs-target="#modal5">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-1 col-sm-1 col-md-1 col-lg-1 text-center">
+                                    5
+                                </div>
+                                <div class="col-9 col-sm-9 col-md-10 col-lg-10 text-start">
+                                    Prisioneros (con Cori)
+                                </div>
+                                <div class="col-2 col-sm-2 col-md-1 col-lg-1 text-center">
+                                    4:17
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Modal for Song 5 -->
+                <div class="modal fade" id="modal5">
+                    <div class="modal-dialog">
+                        <div class="modal-content bg-dark text-white">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="modalIntroLabel">Prisioneros</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="ratio ratio-16x9">
+                                    <iframe style="border-radius:12px"
+                                        src="https://open.spotify.com/embed/track/0GehOu9BQx30O67Tt11q2m?utm_source=generator&theme=0"
+                                        width="100%" height="152" frameBorder="0" allowfullscreen=""
+                                        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                                        loading="lazy"></iframe>
+                                </div>
+                                <div class="row row-cols-4 justify-content-center">
+                                    <div class="col text-center">
+                                        <a href="https://open.spotify.com/track/0GehOu9BQx30O67Tt11q2m?si=d825ced3771341ff"
+                                            target="_blank">
+                                            <img src="/public/img/spotify.png" alt="Intro"
+                                                style="height: 40px; width: 40px">
+                                        </a>
+                                    </div>
+                                    <div class="col text-center">
+                                        <a href="https://deezer.page.link/Rs2GmTT9TfrMDrNs6" target="_blank">
+                                            <img src="/public/img/deezer.png" alt="Intro"
+                                                style="height: 40px; width: 40px">
+                                        </a>
+                                    </div>
+                                    <div class="col text-center">
+                                        <a href="https://www.youtube.com/watch?v=fbQIuC1frOA&ab_channel=Trappist-Topic"
+                                            target="_blank">
+                                            <img src="/public/img/youtube.png" alt="Intro"
+                                                style="height: 40px; width: 40px">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-footer justify-content-center">
+                                <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!--Song 6-->
+                <div class="col col-12 mb-2">
+                    <div class="card" data-bs-toggle="modal" data-bs-target="#modal6">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-1 col-sm-1 col-md-1 col-lg-1 text-center">
+                                    6
+                                </div>
+                                <div class="col-9 col-sm-9 col-md-10 col-lg-10 text-start">
+                                    Tiempo
+                                </div>
+                                <div class="col-2 col-sm-2 col-md-1 col-lg-1 text-center">
+                                    5:10
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Modal for Song 6 -->
+                <div class="modal fade" id="modal6">
+                    <div class="modal-dialog">
+                        <div class="modal-content bg-dark text-white">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="modalIntroLabel">Tiempo</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="ratio ratio-16x9">
+                                    <iframe style="border-radius:12px"
+                                        src="https://open.spotify.com/embed/track/2YSnhNHmPQjjGnTkv1Jz5N?utm_source=generator&theme=0"
+                                        width="100%" height="152" frameBorder="0" allowfullscreen=""
+                                        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                                        loading="lazy"></iframe>
+                                </div>
+                                <div class="row row-cols-4 justify-content-center">
+                                    <div class="col text-center">
+                                        <a href="https://open.spotify.com/track/2YSnhNHmPQjjGnTkv1Jz5N?si=275b51f0199b41f9"
+                                            target="_blank">
+                                            <img src="/public/img/spotify.png" alt="Intro"
+                                                style="height: 40px; width: 40px">
+                                        </a>
+                                    </div>
+                                    <div class="col text-center">
+                                        <a href="https://deezer.page.link/hPUD7hDTKCdTcQmf9" target="_blank">
+                                            <img src="/public/img/deezer.png" alt="Intro"
+                                                style="height: 40px; width: 40px">
+                                        </a>
+                                    </div>
+                                    <div class="col text-center">
+                                        <a href="https://www.youtube.com/watch?v=5GOdg1Pgr9o&ab_channel=TrappistRock"
+                                            target="_blank">
+                                            <img src="/public/img/youtube.png" alt="Intro"
+                                                style="height: 40px; width: 40px">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-footer justify-content-center">
+                                <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!--Song 7-->
+                <div class="col col-12 mb-2">
+                    <div class="card" data-bs-toggle="modal" data-bs-target="#modal7">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-1 col-sm-1 col-md-1 col-lg-1 text-center">
+                                    7
+                                </div>
+                                <div class="col-9 col-sm-9 col-md-10 col-lg-10 text-start">
+                                    Pisando la locura
+                                </div>
+                                <div class="col-2 col-sm-2 col-md-1 col-lg-1 text-center">
+                                    4:44
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Modal for Song 7 -->
+                <div class="modal fade" id="modal7">
+                    <div class="modal-dialog">
+                        <div class="modal-content bg-dark text-white">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="modalIntroLabel">Pisando la locura</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="ratio ratio-16x9">
+                                    <iframe style="border-radius:12px"
+                                        src="https://open.spotify.com/embed/track/2iGNuQ8hNGwAqLZFriz6Zv?utm_source=generator&theme=0"
+                                        width="100%" height="152" frameBorder="0" allowfullscreen=""
+                                        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                                        loading="lazy"></iframe>
+                                </div>
+                                <div class="row row-cols-4 justify-content-center">
+                                    <div class="col text-center">
+                                        <a href="https://open.spotify.com/track/2iGNuQ8hNGwAqLZFriz6Zv?si=75c7b282821f4e07"
+                                            target="_blank">
+                                            <img src="/public/img/spotify.png" alt="Intro"
+                                                style="height: 40px; width: 40px">
+                                        </a>
+                                    </div>
+                                    <div class="col text-center">
+                                        <a href="https://deezer.page.link/kSf5GYEB8rvtNiz38" target="_blank">
+                                            <img src="/public/img/deezer.png" alt="Intro"
+                                                style="height: 40px; width: 40px">
+                                        </a>
+                                    </div>
+                                    <div class="col text-center">
+                                        <a href="https://www.youtube.com/watch?v=Rd5hJv2rU4E&ab_channel=TrappistRock"
+                                            target="_blank">
+                                            <img src="/public/img/youtube.png" alt="Intro"
+                                                style="height: 40px; width: 40px">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-footer justify-content-center">
+                                <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!--Song 8-->
+                <div class="col col-12 mb-2">
+                    <div class="card" data-bs-toggle="modal" data-bs-target="#modal8">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-1 col-sm-1 col-md-1 col-lg-1 text-center">
+                                    8
+                                </div>
+                                <div class="col-9 col-sm-9 col-md-10 col-lg-10 text-start">
+                                    Lugar
+                                </div>
+                                <div class="col-2 col-sm-2 col-md-1 col-lg-1 text-center">
+                                    3:23
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Modal for Song 8 -->
+                <div class="modal fade" id="modal8">
+                    <div class="modal-dialog">
+                        <div class="modal-content bg-dark text-white">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="modalIntroLabel">Lugar</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="ratio ratio-16x9">
+                                    <iframe style="border-radius:12px"
+                                        src="https://open.spotify.com/embed/track/69Uvuf7f4UyA1aiRQGZ8bG?utm_source=generator&theme=0"
+                                        width="100%" height="152" frameBorder="0" allowfullscreen=""
+                                        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                                        loading="lazy"></iframe>
+                                </div>
+                                <div class="row row-cols-4 justify-content-center">
+                                    <div class="col text-center">
+                                        <a href="https://open.spotify.com/track/69Uvuf7f4UyA1aiRQGZ8bG?si=e9483d4c9ff0457d"
+                                            target="_blank">
+                                            <img src="/public/img/spotify.png" alt="Intro"
+                                                style="height: 40px; width: 40px">
+                                        </a>
+                                    </div>
+                                    <div class="col text-center">
+                                        <a href="https://deezer.page.link/jjSY58cPEuyZXrga6" target="_blank">
+                                            <img src="/public/img/deezer.png" alt="Intro"
+                                                style="height: 40px; width: 40px">
+                                        </a>
+                                    </div>
+                                    <div class="col text-center">
+                                        <a href="https://www.youtube.com/watch?v=LPDzhchiBR0&ab_channel=Trappist-Topic"
+                                            target="_blank">
+                                            <img src="/public/img/youtube.png" alt="Intro"
+                                                style="height: 40px; width: 40px">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-footer justify-content-center">
+                                <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!--Song 9-->
+                <div class="col col-12 mb-2">
+                    <div class="card" data-bs-toggle="modal" data-bs-target="#modal9">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-1 col-sm-1 col-md-1 col-lg-1 text-center">
+                                    9
+                                </div>
+                                <div class="col-9 col-sm-9 col-md-10 col-lg-10 text-start">
+                                    Caminando
+                                </div>
+                                <div class="col-2 col-sm-2 col-md-1 col-lg-1 text-center">
+                                    4:11
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Modal for Song 9 -->
+                <div class="modal fade" id="modal9">
+                    <div class="modal-dialog">
+                        <div class="modal-content bg-dark text-white">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="modalIntroLabel">Caminando</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="ratio ratio-16x9">
+                                    <iframe style="border-radius:12px"
+                                        src="https://open.spotify.com/embed/track/5laTCeoteUW8mFh1WFHceO?utm_source=generator&theme=0"
+                                        width="100%" height="152" frameBorder="0" allowfullscreen=""
+                                        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                                        loading="lazy"></iframe>
+                                </div>
+                                <div class="row row-cols-4 justify-content-center">
+                                    <div class="col text-center">
+                                        <a href="https://open.spotify.com/track/5laTCeoteUW8mFh1WFHceO?si=58711758db3f492d"
+                                            target="_blank">
+                                            <img src="/public/img/spotify.png" alt="Intro"
+                                                style="height: 40px; width: 40px">
+                                        </a>
+                                    </div>
+                                    <div class="col text-center">
+                                        <a href="https://deezer.page.link/ZxKYGUGGTjJvZvN67" target="_blank">
+                                            <img src="/public/img/deezer.png" alt="Intro"
+                                                style="height: 40px; width: 40px">
+                                        </a>
+                                    </div>
+                                    <div class="col text-center">
+                                        <a href="https://www.youtube.com/watch?v=hzAEYT6rToA&ab_channel=TrappistRock"
+                                            target="_blank">
+                                            <img src="/public/img/youtube.png" alt="Intro"
+                                                style="height: 40px; width: 40px">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-footer justify-content-center">
+                                <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <%- include('../includes/scripts') %>
+</body>
+
+</html>

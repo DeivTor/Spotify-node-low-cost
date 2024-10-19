@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <%- include('./includes/head') %>
+</head>
+
+<body>
+
+    <section id="hero" class="container-fluid">
+        <div class="row">
+            <!--Columna izquierda del hero-->
+            <div class="col-md-6 d-none left-side-main d-md-flex align-items-center justify-content-end">
+                <lord-icon src="https://cdn.lordicon.com/rnvjhobj.json" trigger="hover"
+                    colors="primary:#2ca58d,secondary:#ffc738,tertiary:#ebe6ef,quaternary:#545454,quinary:#3a3347"
+                    style="width:600px;height:600px">
+                </lord-icon>
+            </div>
+            <!--Columna Derecha del hero-->
+            <div class="col-md-6 right-side ">
+                <div class="row row-cols-1 row-cols-md-1 row-cols-lg-1">
+                    <div class="col d-flex align-items-center justify-content-center py-4 mb-5">
+                        <%- include('./includes/header') %>
+                    </div>
+
+                    <!-- Texto del hero -->
+                    <div id="hero-article"
+                        class="col d-flex align-items-center justify-content-center mt-md-5 mt-lg-5 mt-0 px-5">
+                        <h1 id="hero-title" class="text-dark">Escucha lo que más <span class="hightlight">"te gusta"</span>
+                            aqui! Crea tu playlist y <span class="hightlight">"diviertete"</span> con un sin fin de canciones.</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <%- include('./includes/scripts') %>
+</body>
+
+</html>
